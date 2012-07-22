@@ -13,6 +13,7 @@ pdf: $(PDFFILES)
 
 clean:
 	@rubber --clean $(TEXFILES:.tex=)
+	@rm -rf *.bak
 
 distclean: clean
 	@rubber --clean --pdf $(TEXFILES:.tex=)
