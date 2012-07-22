@@ -90,30 +90,33 @@ Los datos obtenidos para determinar que no existe un CCD que reúna las caracter
 modificarlo,para el detector seleccionado. En caso de modificación, especifique
 los requerimientos para el nuevo diseño óptico.} 
 
-Dado que no existían CCD que
-calzaran con las especificaciones, se plantea la siguiente solución:
+Dado que no existían CCD que se ajustara con las especificaciones, se plantea la
+siguiente solución:
 \begin{itemize}
 \item Disminuir escala en el plano focal del instrumento
 \end{itemize}
 
 Para ello, se necesita:
 \begin{itemize}
-\item Disminuir el Field of View
+\item Disminuir el Field of View.
 \end{itemize}
-
-Otra opción es aumentar el diámetro, pero como se tiene un gran Field of
-View, se descarta esta solución. Luego, se seleccionaron cámaras que
-tuvieran el diámetro focal cercano a 30.8. Las mejores cámaras escogidas
-fueron:
+o bien:
 \begin{itemize}
-\item CCD40-42
-\item CCD55-30
+\item Aumentar el diametro.
 \end{itemize}
 
-Se elige CCD55-30 y se ajusta Field of View para que cumpla con las
-especificaciones de la cámara. De acuerdo a las especificaciones de la cámara,
+Luego, se seleccionaron cámaras que tuvieran el diámetro focal cercano a 30.8.
+Las mejores cámaras escogidas fueron:
+\begin{itemize}
+\item CCD40-42,  Image Area: 27.64x27.64 $[mm]$ ( o 764.411904 $[mm^2]$)
+\item CCD55-30,  Image Area: 25.92x27.94 $[mm]$ ( o 724.3344   $[mm^2]$)
+\item CCD230-42, Image Area: 30.96x30.72 $[mm]$ ( o 951.0912   $[mm^2]$)
+\end{itemize}
+
+Se elige CCD230-42 debido a que su image view es cercano a 30.8 y dentro de las CCD seleccionadas, es la que tiene mayor image view. Se ajusta Field of View para que cumpla con las
+especificaciones de la cámara y tambien el diametro en el plano focal. De acuerdo a las especificaciones de la cámara,
 se recalcula el Field of View para que cumpla los valores tanto de tamaño de los píxeles así
-como el tamaño de la cámara, como se puede apreciar en la figura \ref{fig:p2}
+como el tamaño de la cámara, como se puede apreciar en la figura y se aumenta en 0.2[mm] el diametro en el plano focal. \ref{fig:p2}
 \begin{figure}[ht!]
   \centering
   \subfloat[Tabla de datos ajustando especificaciones]{\label{fig:p2_a}\includegraphics[width=0.5\textwidth]{img/img2}}
