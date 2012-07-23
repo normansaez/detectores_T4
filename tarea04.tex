@@ -77,7 +77,7 @@ Los datos obtenidos para determinar que no existe un CCD que reúna las caracter
   \centering
   \subfloat[Tabla de datos siguiendo especificaciones]{\label{fig:p1_a}\includegraphics[width=0.5\textwidth]{img/img1}}
   ~ 
-  \subfloat[Simbología]{\label{fig:p1_b}\includegraphics[width=0.3\textwidth]{img/img3}}
+  \subfloat[Simbología]{\label{fig:p1_b}\includegraphics[width=0.3\textwidth]{img/simbologia}}
   ~ 
   \caption{Tabla de datos y simbología de acuerdo a las especificaciones}
   \label{fig:p1}
@@ -102,7 +102,7 @@ Para ello, se necesita:
 \end{itemize}
 o bien:
 \begin{itemize}
-\item Aumentar el diametro.
+\item Aumentar el diámetro.
 \end{itemize}
 
 Luego, se seleccionaron cámaras que tuvieran el diámetro focal cercano a 30.8.
@@ -112,84 +112,71 @@ Las mejores cámaras escogidas fueron:
 \item CCD55-30,  Image Area: 25.92x27.94 $[mm]$ ( o 724.3344   $[mm^2]$)
 \item CCD230-42, Image Area: 30.96x30.72 $[mm]$ ( o 951.0912   $[mm^2]$)
 \end{itemize}
-Se estudia la opcion de elegir CCD40-42 debido Field of View cercano a 30.8. Para utilizarla se tiene que ajustar el Field of View.
-Ver figura \ref{fig:ccd40p2}
+Se estudia la opción de elegir CCD40-42 debido Field of View cercano a 30.8.
+Para utilizar se tiene que ajustar el Field of View de las especificaciones, de
+tal manera que sea coherente con el tamaño máximo que pueden tener los píxeles.
+Ver figura \ref{fig:ccd40p2} para revisar los datos obtenidos.
 \begin{figure}[ht!]
   \centering
-  \subfloat[Tabla de datos ajustando especificaciones]{\label{fig:ccd40p2_a}\includegraphics[width=0.5\textwidth]{img/img2}}
+  \subfloat[CCD40-42 Tabla de datos ajustando especificaciones]{\label{fig:ccd40p2_a}\includegraphics[width=0.5\textwidth]{img/ccd40-42}}
   ~ 
-  \subfloat[Simbología]{\label{fig:ccd40p2_b}\includegraphics[width=0.3\textwidth]{img/img3}}
+  \subfloat[Simbología]{\label{fig:ccd40p2_b}\includegraphics[width=0.3\textwidth]{img/simbologia}}
   ~ 
-  \caption{Tabla de datos ajustada y simbología}
+  \caption{CCD40-42}
   \label{fig:ccd40p2}
 \end{figure}
 
-Tambien se estudia la posibilidad de elegir CCD55-30. En este caso tambien es necesario modificar el Field of View de acuerdo a las especificaciones del detector.
-Ver figura \ref{fig:ccd50p2}
+Otra posibilidad es elegir CCD55-30. En este caso también es necesario
+modificar el Field of View de acuerdo a las especificaciones del detector, al igual que en CCD40-42.  Ver
+figura \ref{fig:ccd50p2}
 \begin{figure}[ht!]
   \centering
-  \subfloat[Tabla de datos ajustando especificaciones]{\label{fig:ccd50p2_a}\includegraphics[width=0.5\textwidth]{img/img2}}
+  \subfloat[CCD55-30 Tabla de datos ajustando especificaciones]{\label{fig:ccd50p2_a}\includegraphics[width=0.5\textwidth]{img/ccd55-30}}
   ~ 
-  \subfloat[Simbología]{\label{fig:ccd50p2_b}\includegraphics[width=0.3\textwidth]{img/img3}}
+  \subfloat[Simbología]{\label{fig:ccd50p2_b}\includegraphics[width=0.3\textwidth]{img/simbologia}}
   ~ 
-  \caption{Tabla de datos ajustada y simbología}
+  \caption{CCD55-30}
   \label{fig:ccd50p2}
 \end{figure}
 
-
-
-
-Se estudia la opcion de elegir CCD230-42 debido a que su image view es cercano
-a 30.8 y dentro de las CCD seleccionadas, es la que tiene mayor image view. Se
-ajusta Field of View para que cumpla con las especificaciones de la cámara y
-tambien el diametro en el plano focal. De acuerdo a las especificaciones de la
-cámara, se recalcula el Field of View para que cumpla los valores tanto de
-tamaño de los píxeles así como el tamaño de la cámara, como se puede apreciar
-en la figura y se aumenta en 0.2[mm] el diametro en el plano focal.
-Ver figura \ref{fig:p2}
+La ultima opción a considerar es CCD230-42, debido a que su image view es
+cercano a 30.8 y dentro de las CCD seleccionadas, es la que tiene mayor image
+view. Se ajusta Field of View para que cumpla con las especificaciones de la
+cámara y también el diámetro en el plano focal. De acuerdo a las
+especificaciones de la cámara, se recalcula el Field of View para que cumpla
+los valores tanto de tamaño de los píxeles así como el tamaño de la cámara, y
+se aumenta en 0.2[mm] el diámetro en el plano focal para calzar las
+especificaciones del detector.
+Ver figura \ref{fig:ccd230p2}
 \begin{figure}[ht!]
   \centering
-  \subfloat[Tabla de datos ajustando especificaciones]{\label{fig:p2_a}\includegraphics[width=0.5\textwidth]{img/img2}}
+  \subfloat[CCD230-42 Tabla de datos ajustando especificaciones]{\label{fig:ccd230p2_a}\includegraphics[width=0.5\textwidth]{img/ccd230-42}}
   ~ 
-  \subfloat[Simbología]{\label{fig:p2_b}\includegraphics[width=0.3\textwidth]{img/img3}}
+  \subfloat[Simbología]{\label{fig:ccd230p2_b}\includegraphics[width=0.3\textwidth]{img/simbologia}}
   ~ 
-  \caption{Tabla de datos ajustada y simbología}
-  \label{fig:p2}
+  \caption{CCD230-42}
+  \label{fig:ccd230p2}
 \end{figure}
 
+Hasta el momento, se consideraran todos estos detectores como detectores
+validos, ya que para todos ellos hay que hacer modificaciones al diseño
+original. En las siguientes preguntas, se intentara decir por la mejor opción
+cumpliendo las características ya requeridas.
 %PREGUNTA 3
 \section{Predecir readout noise, dark current y readout time}
-Dada las características presentadas en la pregunta 2 (ver figura \ref{fig:p2})
-y el datasheet se revisa a continuación readout noise, dark current y readout
-frequency:
-\subsection{Readout Noise}
-A 253[K] dependiendo del amplificador, obtenemos:
-\begin{description}
-\item [Low Noise Amplifier, A2]: Valor típico: 3 $rms\ [e^-/pixel]$ , valor máximo : 5 $rms\ [e^-/pixel]$
-\item [Large Signal Amplifier, A1]: Valor típico: 8 $rms\ [e^-/pixel]$
-\end{description}
-Podemos trabajar con este detector utilizando Low Noise Amplifier, ya que el
-valor máximo es 5 $rms\ [e^-/pixel]$. El valor para A1 (Large Signal Amplifier)
-se descarta ya que el valor típico supera lo que se especifica en este trabajo.
-Ver además figura \ref{fig:p3_1} para revisar la relación entre readout noise y
-frecuencia de lectura.
+Dada las características presentadas en la pregunta 2 y el datasheet de cada
+detector, se revisa a continuación spectral range, readout noise, dark current y readout
+frequency, para cada caso:
+\subsection{Spectral Range}
 \begin{figure}[ht!]
   \centering
-  \subfloat[Readout Noise v/s Frecuencia]{\label{fig:p3_a}\includegraphics[width=0.8\textwidth]{img/img5}}
+  \subfloat[Spectral range para todas las cámaras propuestas]{\label{fig:spectral}\includegraphics[width=0.8\textwidth]{img/spectral_range}}
   ~ 
-  \caption{Readout Noise v/s Frecuencia}
-  \label{fig:p3_1}
+  \caption{Spectral Range en $[nm]$}
+  \label{fig:p3_b}
 \end{figure}
-
-\subsection{Dark Current}
-Dark Current para este detector, lo podemos ver gráficamente en figura \ref{fig:p3}
-\begin{figure}[ht!]
-  \centering
-  \subfloat[Dark Current v/s Temperatura]{\label{fig:p3_a}\includegraphics[width=0.8\textwidth]{img/img4}}
-  ~ 
-  \caption{Variaciones de Dark Current con respecto a la temperatura de Operación}
-  \label{fig:p3}
-\end{figure}
+Dada los requerimientos, solamente es posible utilizar detectores del tipo Back Illuminated.
+\newpage
 \subsection{Readout Frequency}
 Podemos estimar readout frequency de la siguiente manera:
 \begin{description}
@@ -201,26 +188,68 @@ Podemos estimar readout frequency de la siguiente manera:
 Dado los parámetros anteriores el readout frequency se puede calcular: 
 \begin{align*}
 readout\ frequency &= \frac{pixels}{tiempo*amplificadores}\\
-readout\ frequency &= \frac{1252*1152}{10*2} [Hz]\\
-readout\ frequency &= 72115.2 [Hz] = 72.1152 [kHz]\\
 \end{align*}
+Se puede ver figura \ref{fig:p3} para  cada una de las cámaras
+\begin{figure}[ht!]
+  \centering
+  \subfloat[CCD40-42]{\label{fig:ccd40p3}\includegraphics[width=0.3\textwidth]{img/ccd40-42p3}}
+  ~ 
+  \subfloat[CCD55-30]{\label{fig:ccd50p3}\includegraphics[width=0.3\textwidth]{img/ccd55-30p3}}
+  ~ 
+  \subfloat[CCD230-42]{\label{fig:ccd230p3}\includegraphics[width=0.3\textwidth]{img/ccd230-42p3}}
+  ~ 
+  \caption{Readout Frequency para cada cámara}
+  \label{fig:p3}
+\end{figure}
 
+\subsection{Readout Noise}
+\begin{figure}[ht!]
+  \centering
+  \subfloat[Readout Noise para todas las cámaras propuestas]{\label{fig:readout}\includegraphics[width=0.4\textwidth]{img/readoutnoise}}
+  ~ 
+  \caption{Readout Noise}
+  \label{fig:p3_a}
+\end{figure}
 
+Dada los requerimientos y en base a figura \ref{fig:p3_a}  no es posible
+utilizar CCD230-42, debido a que supera el readout noise requerido. Por lo
+tanto se descarta. 
 
+\subsection{Dark Current}
+Dark current para todas las cámaras propuestas se puede revisar en \ref{fig:p3_c}
+\begin{figure}[ht!]
+  \centering
+  \subfloat[Dark Current para todas las cámaras propuestas]{\label{fig:darkcurrent}\includegraphics[width=0.8\textwidth]{img/darkcurrent}}
+  ~ 
+  \caption{Dark Current}
+  \label{fig:p3_c}
+\end{figure}
 
+Cabe señalar que no es posible hacer una comparativa con todos los modelos,
+debido a que cada una de las cámaras cambia dark current dependiendo de la
+temperatura.
+
+Debido a los datos anteriores, se descarta CCD40-42, debido a su alto readout
+noise. Además, y debido a las características del tamaño del píxel requerido y
+a las modificaciones en el Field of View, se descarta la utilización de
+CCD55-30. La mejor opción es CCD40-42. El Field of View es el mayor de todos y
+además Image Area es mayor a CCD55-30, su mas cercano rival. A favor de
+CCD40-42 es el tamaño del píxel comparando con CCD55-30. (CCD55-30 tenia un
+píxel de tamaño $\pm 22 [\mu m]$ comparado con el tamaño del píxel de CCD40-42
+que es de $\pm 15 [\mu m]$ .
 %PREGUNTA 4
 \section{Estimar los tiempos de exposición para diversos filtros considerando la
 eficiencia cuántica del CCD seleccionado y la obtención de una SNR de al menos
 10. Analice filtros del tipo SDSS4 (Sloan Digital Sky Survey) para su análisis.}
-Para poder analizar esta pregunta es necesario tener en consideracion la figura \ref{fig:p4}
+Para poder analizar esta pregunta es necesario tener en consideración la figura \ref{fig:p4}
 
-\begin{figure}[ht!]
-  \centering
-  \subfloat[QE v/s Wavelength]{\label{fig:p4_a}\includegraphics[width=0.8\textwidth]{img/img6}}
-  ~ 
-  \caption{Quantum Efficiency (\%) v/s Wavelength ($[nm]$)}
-  \label{fig:p4}
-\end{figure}
+%\begin{figure}[ht!]
+%  \centering
+%  \subfloat[QE v/s Wavelength]{\label{fig:p4_a}\includegraphics[width=0.8\textwidth]{img/img6}}
+%  ~ 
+%  \caption{Quantum Efficiency (\%) v/s Wavelength ($[nm]$)}
+%  \label{fig:p4}
+%\end{figure}
 
 %PREGUNTA 5
 \section{Especificar los requerimientos de enfriamiento criogénico, en particular
