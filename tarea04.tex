@@ -108,26 +108,26 @@ o bien:
 Luego, se seleccionaron cámaras que tuvieran el diámetro focal cercano a 30.8.
 Las mejores cámaras escogidas fueron:
 \begin{itemize}
-\item CCD40-42,  Image Area: 27.64x27.64 $[mm]$ ( o 764.411904 $[mm^2]$)
+\item CCD42-40,  Image Area: 27.64x27.64 $[mm]$ ( o 764.411904 $[mm^2]$)
 \item CCD55-30,  Image Area: 25.92x27.94 $[mm]$ ( o 724.3344   $[mm^2]$)
 \item CCD230-42, Image Area: 30.96x30.72 $[mm]$ ( o 951.0912   $[mm^2]$)
 \end{itemize}
-Se estudia la opción de elegir CCD40-42 debido Field of View cercano a 30.8.
+Se estudia la opción de elegir CCD42-40 debido Field of View cercano a 30.8.
 Para utilizar se tiene que ajustar el Field of View de las especificaciones, de
 tal manera que sea coherente con el tamaño máximo que pueden tener los píxeles.
-Ver figura \ref{fig:ccd40p2} para revisar los datos obtenidos.
+Ver figura \ref{fig:ccd42p2} para revisar los datos obtenidos.
 \begin{figure}[ht!]
   \centering
-  \subfloat[CCD40-42 Tabla de datos ajustando especificaciones]{\label{fig:ccd40p2_a}\includegraphics[width=0.5\textwidth]{img/ccd40-42}}
+  \subfloat[CCD42-40 Tabla de datos ajustando especificaciones]{\label{fig:ccd42p2_a}\includegraphics[width=0.5\textwidth]{img/ccd42-40}}
   ~ 
-  \subfloat[Simbología]{\label{fig:ccd40p2_b}\includegraphics[width=0.3\textwidth]{img/simbologia}}
+  \subfloat[Simbología]{\label{fig:ccd42p2_b}\includegraphics[width=0.3\textwidth]{img/simbologia}}
   ~ 
-  \caption{CCD40-42}
-  \label{fig:ccd40p2}
+  \caption{CCD42-40}
+  \label{fig:ccd42p2}
 \end{figure}
 
 Otra posibilidad es elegir CCD55-30. En este caso también es necesario
-modificar el Field of View de acuerdo a las especificaciones del detector, al igual que en CCD40-42.  Ver
+modificar el Field of View de acuerdo a las especificaciones del detector, al igual que en CCD42-40.  Ver
 figura \ref{fig:ccd50p2}
 \begin{figure}[ht!]
   \centering
@@ -192,7 +192,7 @@ readout\ frequency &= \frac{pixels}{tiempo*amplificadores}\\
 Se puede ver figura \ref{fig:p3} para  cada una de las cámaras
 \begin{figure}[ht!]
   \centering
-  \subfloat[CCD40-42]{\label{fig:ccd40p3}\includegraphics[width=0.3\textwidth]{img/ccd40-42p3}}
+  \subfloat[CCD42-40]{\label{fig:ccd42p3}\includegraphics[width=0.3\textwidth]{img/ccd42-40p3}}
   ~ 
   \subfloat[CCD55-30]{\label{fig:ccd50p3}\includegraphics[width=0.3\textwidth]{img/ccd55-30p3}}
   ~ 
@@ -229,27 +229,30 @@ Cabe señalar que no es posible hacer una comparativa con todos los modelos,
 debido a que cada una de las cámaras cambia dark current dependiendo de la
 temperatura.
 
-Debido a los datos anteriores, se descarta CCD40-42, debido a su alto readout
+Debido a los datos anteriores, se descarta CCD42-40, debido a su alto readout
 noise. Además, y debido a las características del tamaño del píxel requerido y
 a las modificaciones en el Field of View, se descarta la utilización de
-CCD55-30. La mejor opción es CCD40-42. El Field of View es el mayor de todos y
+CCD55-30. La mejor opción es CCD42-40. El Field of View es el mayor de todos y
 además Image Area es mayor a CCD55-30, su mas cercano rival. A favor de
-CCD40-42 es el tamaño del píxel comparando con CCD55-30. (CCD55-30 tenia un
-píxel de tamaño $\pm 22 [\mu m]$ comparado con el tamaño del píxel de CCD40-42
+CCD42-40 es el tamaño del píxel comparando con CCD55-30. (CCD55-30 tenia un
+píxel de tamaño $\pm 22 [\mu m]$ comparado con el tamaño del píxel de CCD42-40
 que es de $\pm 15 [\mu m]$ .
+
+Cabe señalar que entre los distintos modelos de CCD42-40 
 %PREGUNTA 4
 \section{Estimar los tiempos de exposición para diversos filtros considerando la
 eficiencia cuántica del CCD seleccionado y la obtención de una SNR de al menos
 10. Analice filtros del tipo SDSS4 (Sloan Digital Sky Survey) para su análisis.}
-Para poder analizar esta pregunta es necesario tener en consideración la figura \ref{fig:p4}
 
-%\begin{figure}[ht!]
-%  \centering
-%  \subfloat[QE v/s Wavelength]{\label{fig:p4_a}\includegraphics[width=0.8\textwidth]{img/img6}}
-%  ~ 
-%  \caption{Quantum Efficiency (\%) v/s Wavelength ($[nm]$)}
-%  \label{fig:p4}
-%\end{figure}
+Para poder analizar esta pregunta es necesario tener en consideración solamente CCD42-40 la figura \ref{fig:p4}
+
+\begin{figure}[ht!]
+  \centering
+%  \subfloat[QE v/s Wavelength]{\label{fig:p4_a}\includegraphics[width=0.8\textwidth]{img/QE}}
+  ~ 
+  \caption{Quantum Efficiency (\%) v/s Wavelength ($[nm]$)}
+  \label{fig:p4}
+\end{figure}
 
 %PREGUNTA 5
 \section{Especificar los requerimientos de enfriamiento criogénico, en particular
